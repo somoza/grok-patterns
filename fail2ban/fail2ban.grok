@@ -1,0 +1,4 @@
+FAIL2BAN_BAN %{TIMESTAMP_ISO8601:timestamp} %{JAVACLASS:criteria}        \[%{NUMBER:pid}\]\: %{LOGLEVEL:level}  \[%{NOTSPACE:service}\] Ban %{IPV4:clientip}
+FAIL2BAN_FOUND %{TIMESTAMP_ISO8601:timestamp} %{JAVACLASS:criteria}         \[%{NUMBER:pid}\]\: %{LOGLEVEL:level}    \[%{NOTSPACE:service}\] Found %{IPV4:clientip}
+FAIL2BAN_UNBAN %{TIMESTAMP_ISO8601:timestamp} %{JAVACLASS:criteria}        \[%{NUMBER:pid}\]\: %{LOGLEVEL:level}  \[%{NOTSPACE:service}\] Unban %{IPV4:clientip}
+FAIL2BAN_ALREADYBAN %{TIMESTAMP_ISO8601:timestamp} %{JAVACLASS:criteria}         \[%{NUMBER:pid}\]\: %{LOGLEVEL:level}    \[%{NOTSPACE:service}\] %{IPV4:clientip} already banned
